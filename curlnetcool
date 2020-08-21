@@ -1,0 +1,15 @@
+curl --location --request POST 'localhost:8080/integrations/netcool/sendAlarm' \
+--header 'Content-Type: application/json' \
+--header 'Content-Type: text/plain' \
+--data-raw '  {
+  	"ServerSerial" : 123456,
+  	"Firstoccurance" : 123456,
+  	"Lastoccurance" : 123456,
+  	"Identifier" : "ident",
+  	"Severity" : 123,
+  	"Summary" : "summary",
+  	"ApiKey" : "2jgIbtAWp1iNpOYAWtXgKgXaQDfCU5K7",
+  	"AlarmUniqueId" :12345,
+  	"NEName" : "Eymen"
+  }
+ '
